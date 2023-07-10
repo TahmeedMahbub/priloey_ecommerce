@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return '<br><br><br><br><center><h1>Priloey Ecommerce</h1></center>';
 });
+
