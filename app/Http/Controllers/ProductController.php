@@ -9,7 +9,13 @@ class ProductController extends Controller
 {
     public function categorySubcategory()
     {
-        $category = Category::all();
-        return $category;
+
+        $categories = Category::all();
+
+        foreach($categories as $category)
+        {
+            $category->subcategories = $category->subcategories;
+        }
+        return $categories;
     }
 }
